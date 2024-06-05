@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8 tr" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="CSS/restoran.css " />
+    <script
+      src="https://kit.fontawesome.com/1357f9c706.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1357f9c706.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Header Start-->
+    <div class="header container">
+      <!--logo part-->
+      <img src="gorsel/logo.jpg" alt="" class="main-logo" />
+      <!--Search part-->
+      <div class="search">
+        <span class="search-icon"
+          ><i
+            class="fa-solid fa-magnifying-glass fa-lg"
+            style="color:#65B741"
+          ></i
+        ></span>
+        <input type="search" class="search-input" placeholder="Ara..." />
+      </div>
+      <!--Dropdown menu part-->
+      <img src="gorsel/user.png" class="profile-pic" onclick="toogleMenu()" />
+      <div class="drop-menu-wrap" id="dropMenu">
+        <div class="drop-menu">
+          <div class="user-info">
+            <img src="gorsel/user.png" />
+            <h2>Ahmet Akdere</h2>
+          </div>
+          <hr />
+          <a href="#" class="drop-menu-link"
+            ><i class="fa-solid fa-user fa-lg" style="color: #fff"></i>
+            <p>Profil</p>
+            <span>></span>
+          </a>
+          <a href="#" class="drop-menu-link"
+            ><i class="fa-solid fa-gear fa-lg" style="color: #fff"></i>
+            <p>Ayarlar</p>
+            <span>></span>
+          </a>
+          <a href="#" class="drop-menu-link"
+            ><i
+              class="fa-solid fa-calendar-days fa-lg"
+              style="color: #fff"
+            ></i>
+            <p>Yorumlarım</p>
+            <span>></span> </a
+          >
+          <a
+            href="#"
+            class="drop-menu-link drop-menu-link-logout"
+            ><i
+              class="fa-solid fa-right-from-bracket fa-lg"
+              style="color: #ff2e2e"
+            ></i>
+            <p>Çıkış</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+    <!--Header End-->
+    <!--Navbar Start-->
+    <nav class="navbar">
+        <h1>
+            <span>AKDO</span>
+             ile BU ŞEHRİN LEZZETLERİNİ BERABER KEŞFETMEYE HAZIR MISIN ? 
+        </h1>
+    </nav>
+    <!--Navbar End-->
+<!--Aside Start-->
+
+<aside class="sidebar container">
+
+      <div class="logo">
+        <div class="div-btn"><i class="fa-solid fa-bars fa-lg btn1" style="color: #00174f; margin-bottom: 5px;" id="btn"></i>
+        </div>
+      </div>
+    
+    <div class="aside">
+      <div class="filter">
+          <div class="filter-1">
+          <span>Sırala</span>
+              <ul>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-2"  class="checkbox">
+                  <label for="checkbox-1">Yüksek Puan</label>
+              </li>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-3"  class="checkbox">
+                  <label for="checkbox-1">Önce En Ucuz</label>
+              </li>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-4"  class="checkbox">
+                  <label for="checkbox-1">Önce En Pahalı</label>
+              </li>
+              </ul>
+          </div>
+          <br>
+          <div class="filter-2">
+          <span>Kategori</span>
+              <ul>
+              <li class="filter-li">
+                  <a href="yoresel"><input type="checkbox" id="checkbox-5"  class="checkbox"></a>
+                  <label for="checkbox-1">Fast Food</label>
+              </li>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-6"  class="checkbox">
+                  <label for="checkbox-1">Kebap</label>
+              </li>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-7"  class="checkbox">
+                  <label for="checkbox-1">Fırından</label>
+              </li>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-8"  class="checkbox">
+                  <label for="checkbox-1">Fast-Food</label></li>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-9"  class="checkbox">
+                  <label for="checkbox-1">İçecek</label></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  </aside>
+<!--Aside End-->
+<!--Section Start--> 
+<article class="article">
+  <h1 id="yoresel">İçerikler</h1>
+</article>
+<section>  
+    <section class="restorants" id="restorants">
+        <div class="cards" id="cards">
+            <div class="image">
+                <img src="RESTORANLAR/AKDO/21.jpg" alt="">
+            </div>
+              <div class="star">
+                <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+                <span id="rating">5.0</span>
+                <span id="class">Fast Food</span>
+              </div>
+              <div class="card-content">
+              <h2>Dondurma</h2>
+            </div>
+            <a href="comment-page.html" class="btn">Yorum yap</a>
+  
+        </div>
+        <div class="cards" id="cards">
+          <div class="image">
+              <img src="RESTORANLAR/AKDO/23.jpg" alt="">
+          </div>
+            <div class="star">
+              <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+              <span id="rating">5.0</span>
+              <span id="class">Fast Food</span>
+            </div>
+            
+          <div class="card-content">
+            <h2>Pasta</h2>
+          </div>
+          <a href="comment-page.html" class="btn">Yorum yap</a>
+
+          </button>
+        </div>
+        <div class="cards" id="cards">
+          <div class="image">
+              <img src="RESTORANLAR/AKDO/28.jpg" alt="" style="height: 200px">
+          </div>
+            <div class="star">
+              <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+              <span id="rating">5.0</span>
+              <span id="class">İçecek</span>
+            </div>
+            
+          <div class="card-content">
+            <h2>Kahve</h2>
+          </div>
+          <a href="comment-page.html" class="btn">Yorum yap</a>
+
+          </button>
+        </div>
+    </section>
+</section>
+<section>  
+    <section class="restorants" id="restorants">
+        <div class="cards" id="cards">
+            <div class="image">
+                <img src="RESTORANLAR/AKDO/29.jpg" alt="">
+            </div>
+              <div class="star">
+                <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+                <span id="rating">5.0</span>
+                <span id="class">Fast Food</span>
+              </div>
+              <div class="card-content">
+              <h2>Pasta</h2>
+            </div>
+            <a href="comment-page.html" class="btn">Yorum yap</a>
+  
+        </div>
+        <div class="cards" id="cards">
+          <div class="image">
+              <img src="RESTORANLAR/AKDO/33.jpg" alt="">
+          </div>
+            <div class="star">
+              <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+              <span id="rating">5.0</span>
+              <span id="class">Fast Food</span>
+            </div>
+            
+          <div class="card-content">
+            <h2>Tatlı</h2>
+          </div>
+          <a href="comment-page.html" class="btn">Yorum yap</a>
+
+          </button>
+        </div>
+        <div class="cards" id="cards">
+          <div class="image">
+              <img src="RESTORANLAR/AKDO/34.jpg" alt="" style="height: 200px">
+          </div>
+            <div class="star">
+              <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+              <span id="rating">5.0</span>
+              <span id="class">Fırından</span>
+            </div>
+            
+          <div class="card-content">
+            <h2>Unlu Mamül</h2>
+          </div>
+          <a href="comment-page.html" class="btn">Yorum yap</a>
+
+          </button>
+        </div>
+    </section>
+</section>
+<!--------------------------------------------------->
+    <!--Section End-->
+    <!--Footer Start-->
+    <hr style="margin-top: 35px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+<footer>
+  <div class="tweet">
+    <div class="input-box">
+      <div class="tweet-area">
+        <span class="placeholder">Yorum yap...</span>
+        <div
+          class="input editable"
+          contenteditable="true"
+          spellcheck="false"
+        ></div>
+        <div
+          class="input readonly"
+          contenteditable="true"
+          spellcheck="false"
+        ></div>
+      </div>
+    </div>
+    <hr />
+    <div class="bottom">
+      <div class="star-rating">
+        <p>Puanla: <span class="star-rating">
+          <label for="rate-1" style="--i:1"><i class="fa-solid fa-star"></i></label>
+          <input type="radio" name="rating" id="rate-1" value="1">
+          <label for="rate-2" style="--i:2"><i class="fa-solid fa-star"></i></label>
+          <input type="radio" name="rating" id="rate-2" value="2" checked>
+          <label for="rate-3" style="--i:3"><i class="fa-solid fa-star"></i></label>
+          <input type="radio" name="rating" id="rate-3" value="3">
+          <label for="rate-4" style="--i:4"><i class="fa-solid fa-star"></i></label>
+          <input type="radio" name="rating" id="rate-4" value="4">
+          <label for="rate-5" style="--i:5"><i class="fa-solid fa-star"></i></label>
+          <input type="radio" name="rating" id="rate-5" value="5">
+        </span></p>
+      </div>
+      <ul class="icons">
+        <!--Dosya Ekleme-->
+        <li style="color: #002379">
+            <label for="file-upload" style="cursor: pointer;">
+              <i class="fa-solid fa-image fa-lg"></i>
+              <input type="file" id="file-upload" style="display:none;" accept="image/*" onchange="handleFileSelect(event)">
+            </label>
+        </li>
+      </ul>
+      <div class="prize">
+        <i class="fa-solid fa-turkish-lira-sign"></i>
+          <input type="number" value="0">
+      </div>
+      <div class="content">
+        <span class="counter">60</span>
+        <button>Gönder</button>
+      </div>
+    </div>
+  </div>
+  <h3 style="margin-top: 15px; color: #65B741; font-weight: 700; font-size: 30px;">Yorumlar:</h3>
+  <div class="comments">
+    <div class="main-content">
+      <div class="main-content-profile">
+        <a href="KullaniciProfili.html"
+          ><img src="gorsel/user.png" alt="" class="main-content-profile-logo"
+        /></a>
+        <a href="KullaniciProfili.html">@akdereahmet</a>
+        <span class="categori"><b>Kategori:</b></span>
+        <span class="categori2" id="categori">Fast Food</span>
+        <span class="prize" id="prize">80</span>
+        <span class="prize2" id="prize2">₺</span>
+      </div> 
+      <hr />
+      <div class="comments">
+        <p class="comments-text">Bugün Akdoda dondurma yedim. Fakat servisi beğenmedim.</p>
+        <img src="RESTORANLAR/AKDO/21.jpg" alt="" class="comments-img" />
+        <hr style="margin: 15px 0 15px 0;">
+        <p>Bu yorum faydalı oldu mu ? </p>
+        <div class="main-content-content-selection">
+          <div class="main-content-content-up" id="clicker1">
+            <i class="fa-regular fa-thumbs-up fa-lg"></i>
+            <span>Katılıyorum</span>
+          </div>
+          <div class="main-content-content-down" id="clicker2">
+            <i class="fa-regular fa-thumbs-down fa-lg"></i>
+            <span>Katılmıyorum</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="comments">
+    <div class="main-content">
+      <div class="main-content-profile">
+        <a href="KullaniciProfili.html"
+          ><img src="gorsel/user.png" alt="" class="main-content-profile-logo"
+        /></a>
+        <a href="KullaniciProfili.html">@akdereahmet</a>
+        <span class="categori"><b>Kategori:</b></span>
+        <span class="categori2" id="categori">Fast Food</span>
+        <span class="prize" id="prize">80</span>
+        <span class="prize2" id="prize2">₺</span>
+      </div> 
+      <hr />
+      <div class="comments">
+        <p class="comments-text">Bugün Akdoda dondurma yedim. Fakat servisi beğenmedim.</p>
+        <img src="RESTORANLAR/AKDO/21.jpg" alt="" class="comments-img" />
+        <hr style="margin: 15px 0 15px 0;">
+        <p>Bu yorum faydalı oldu mu ? </p>
+        <div class="main-content-content-selection">
+          <div class="main-content-content-up" id="clicker1">
+            <i class="fa-regular fa-thumbs-up fa-lg"></i>
+            <span>Katılıyorum</span>
+          </div>
+          <div class="main-content-content-down" id="clicker2">
+            <i class="fa-regular fa-thumbs-down fa-lg"></i>
+            <span>Katılmıyorum</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="comments">
+    <div class="main-content">
+      <div class="main-content-profile">
+        <a href="KullaniciProfili.html"
+          ><img src="gorsel/user.png" alt="" class="main-content-profile-logo"
+        /></a>
+        <a href="KullaniciProfili.html">@akdereahmet</a>
+        <span class="categori"><b>Kategori:</b></span>
+        <span class="categori2" id="categori">Fast Food</span>
+        <span class="prize" id="prize">80</span>
+        <span class="prize2" id="prize2">₺</span>
+      </div> 
+      <hr />
+      <div class="comments">
+        <p class="comments-text">Bugün Akdoda dondurma yedim. Fakat servisi beğenmedim.</p>
+        <img src="RESTORANLAR/AKDO/21.jpg" alt="" class="comments-img" />
+        <hr style="margin: 15px 0 15px 0;">
+        <p>Bu yorum faydalı oldu mu ? </p>
+        <div class="main-content-content-selection">
+          <div class="main-content-content-up" id="clicker1">
+            <i class="fa-regular fa-thumbs-up fa-lg"></i>
+            <span>Katılıyorum</span>
+          </div>
+          <div class="main-content-content-down" id="clicker2">
+            <i class="fa-regular fa-thumbs-down fa-lg"></i>
+            <span>Katılmıyorum</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>  
+<hr style="margin-top: 35px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"> 
+    <!--Footer End-->
+    <script src="JS/restoran.js"></script>
+  </body>
+</html>

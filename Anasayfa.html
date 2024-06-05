@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8 tr" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="CSS/Anasayfa.css" />
+    <script
+      src="https://kit.fontawesome.com/1357f9c706.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1357f9c706.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--Header Start-->
+    <div class="header container">
+      <!--logo part-->
+      <img src="gorsel/logo.jpg" alt="" class="main-logo" />
+      <!--Search part-->
+      <div class="search">
+        <span class="search-icon"
+          ><i
+            class="fa-solid fa-magnifying-glass fa-lg"
+            style="color:#65B741"
+          ></i
+        ></span>
+        <input type="search" class="search-input" placeholder="Ara..." />
+      </div>
+      <!--Dropdown menu part-->
+      <img src="gorsel/user.png" class="profile-pic" onclick="toogleMenu()" />
+      <div class="drop-menu-wrap" id="dropMenu">
+        <div class="drop-menu">
+          <div class="user-info">
+            <img src="gorsel/user.png" />
+            <h2>Ahmet Akdere</h2>
+          </div>
+          <hr />
+          <a href="KullaniciProfili.html" class="drop-menu-link"
+            ><i class="fa-solid fa-user fa-lg" style="color: #fff"></i>
+            <p>Profil</p>
+            <span>></span>
+          </a>
+          <a href="Ayarlar.html" class="drop-menu-link"
+            ><i class="fa-solid fa-gear fa-lg" style="color: #fff"></i>
+            <p>Ayarlar</p>
+            <span>></span>
+          </a>
+          <a href="yorumlarim.html" class="drop-menu-link"
+            ><i
+              class="fa-solid fa-calendar-days fa-lg"
+              style="color: #fff"
+            ></i>
+            <p>Yorumlarım</p>
+            <span>></span> </a
+          >
+          <a
+            href="GirisSayfası.html"
+            class="drop-menu-link drop-menu-link-logout"
+            ><i
+              class="fa-solid fa-right-from-bracket fa-lg"
+              style="color: #ff2e2e"
+            ></i>
+            <p>Çıkış</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+    <!--Header End-->
+    <!--Navbar Start-->
+    <nav class="navbar">
+        <h1>
+            BU ŞEHRİN LEZZETLERİNİ BERABER KEŞFETMEYE HAZIR MISIN ? 
+        </h1>
+    </nav>
+    <!--Navbar End-->
+<!--Aside Start-->
+
+<aside class="sidebar container">
+
+      <div class="logo">
+        <div class="div-btn"><i class="fa-solid fa-bars fa-lg btn1" style="color: #00174f; margin-bottom: 5px;" id="btn"></i>
+        </div>
+      </div>
+    
+    <div class="aside">
+      <div class="filter">
+          <div class="filter-1">
+          <span>Sırala</span>
+              <ul>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-2"  class="checkbox">
+                  <label for="checkbox-1">Yüksek Puan</label>
+              </li>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-3"  class="checkbox">
+                  <label for="checkbox-1">Önce En Ucuz</label>
+              </li>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-4"  class="checkbox">
+                  <label for="checkbox-1">Önce En Pahalı</label>
+              </li>
+              </ul>
+          </div>
+          <br>
+          <div class="filter-2">
+          <span>Kategori</span>
+              <ul>
+              <li class="filter-li">
+                  <a href="yoresel"><input type="checkbox" id="checkbox-5"  class="checkbox"></a>
+                  <label for="checkbox-1">Yöresel</label>
+              </li>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-6"  class="checkbox">
+                  <label for="checkbox-1">Kebap</label>
+              </li>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-7"  class="checkbox">
+                  <label for="checkbox-1">Fırından</label>
+              </li>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-8"  class="checkbox">
+                  <label for="checkbox-1">Fast-Food</label></li>
+              <li class="filter-li">
+                  <input type="checkbox" id="checkbox-9"  class="checkbox">
+                  <label for="checkbox-1">İçecek</label></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  </aside>
+<!--Aside End-->
+<!--Section Start--> 
+<article class="article">
+  <h1 id="yoresel">Yöresel</h1>
+</article>
+<section>  
+    <section class="restorants" id="restorants">
+        <div class="cards" id="cards">
+            <div class="image">
+                <img src="gorsel/1.png" alt="">
+            </div>
+              <div class="star">
+                <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+                <span id="rating">5.0</span>
+                <span id="class">Yöresel</span>
+              </div>
+              <div class="card-content">
+              <h2>AKDO</h2>
+            </div>
+            <a href="restoran.html" class="btn">Daha Fazla</a>
+  
+        </div>
+        <div class="cards" id="cards">
+          <div class="image">
+              <img src="gorsel/3.jpg" alt="">
+          </div>
+            <div class="star">
+              <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+              <span id="rating">5.0</span>
+              <span id="class">Yöresel</span>
+            </div>
+            
+          <div class="card-content">
+            <h2>MADO</h2>
+          </div>
+          <a href="restoran.html" class="btn">Daha Fazla</a>
+
+          </button>
+        </div>
+        <div class="cards" id="cards">
+          <div class="image">
+              <img src="gorsel/17.jpg" alt="" style="height: 200px">
+          </div>
+            <div class="star">
+              <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+              <span id="rating">5.0</span>
+              <span id="class">Yöresel</span>
+            </div>
+            
+          <div class="card-content">
+            <h2>KERVAN</h2>
+          </div>
+          <a href="restoran.html" class="btn">Daha Fazla</a>
+
+          </button>
+        </div>
+    </section>
+</section>
+<!--------------------------------------------------->
+<article class="article">
+  <h1 id="icecek">İçecekler</h1>
+</article>
+
+  <section>
+    <section>
+      <div class="cards" id="cards">
+        <div class="image">
+            <img src="gorsel/20.jpg" alt="">
+        </div>
+          <div class="star">
+            <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+            <span id="rating">5.0</span>
+            <span id="class">İçecekler</span>
+          </div>
+        <div class="card-content">
+          <h2>D'li Food</h2>
+        </div>
+        <a href="restoran.html" class="btn">Daha Fazla</a>
+
+        </button>
+      </div>
+      <div class="cards" id="cards">
+        <div class="image">
+            <img src="gorsel/16.jpg" alt="">
+        </div>
+          <div class="star">
+            <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+            <span id="rating">5.0</span>
+            <span id="class">İçecekler</span>
+          </div>
+        <div class="card-content">
+          <h2>the Stock</h2>
+          
+        </div>
+        <a href="restoran.html" class="btn">Daha Fazla</a>
+        </button>
+      </div>
+      <div class="cards" id="cards">
+      <div class="image">
+          <img src="gorsel/8.jpg" alt="">
+      </div>
+        <div class="star">
+          <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+          <span id="rating">5.0</span>
+          <span id="class">İçecekler</span>
+        </div>
+      <div class="card-content">
+        <h2>Gönül Kahvesi</h2>
+        
+      </div>
+      <a href="restoran.html" class="btn">Daha Fazla</a>
+
+      </button>
+      </div>
+    </section>
+  </section>
+<!--------------------------------------------------->
+<article class="article">
+  <h1 id="kebap">Fast-Food</h1>
+</article>
+<section>
+  <section>
+      <div class="cards" id="cards">
+        <div class="image">
+            <img src="gorsel/18.jpg" alt="">
+        </div>
+          <div class="star">
+            <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+            <span id="rating">5.0</span>
+            <span id="class">Fast Food</span>
+          </div>
+        <div class="card-content">
+          <h2>Harvey Burger</h2>
+          
+        </div>
+        <a href="restoran.html" class="btn">Daha Fazla</a>
+
+        </button>
+      </div>
+      <div class="cards" id="cards">
+        <div class="image">
+            <img src="gorsel/7.jpg" alt="">
+        </div>
+          <div class="star">
+            <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+            <span id="rating">5.0</span>
+            <span id="class">Fast Food</span>
+          </div>
+        <div class="card-content">
+          <h2>Chicken Arts</h2>
+          
+        </div>
+        <a href="restoran.html" class="btn">Daha Fazla</a>
+        </button>
+      </div>
+      <div class="cards" id="cards">
+      <div class="image">
+          <img src="gorsel/9.jpg" alt="">
+      </div>
+        <div class="star">
+          <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+          <span id="rating">5.0</span>
+          <span id="class">Fast Food</span>
+        </div>
+      <div class="card-content">
+        <h2>Cajun Corner</h2>
+        
+      </div>
+      <a href="restoran.html" class="btn">Daha Fazla</a>
+
+      </button>
+      </div>
+  </section>
+</section>
+<!--------------------------------------------------->
+<article class="article">
+  <h1 id="firin">Fırın</h1>
+</article>
+<section>
+  <section>
+      <div class="cards" id="cards">
+        <div class="image">
+            <img src="gorsel/2.jpg" alt="">
+        </div>
+          <div class="star">
+            <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+            <span id="rating">5.0</span>
+            <span id="class">Fırın</span>
+          </div>
+        <div class="card-content">
+          <h2>27 Antep</h2>
+          
+        </div>
+        <a href="restoran.html" class="btn">Daha Fazla</a>
+
+        </button>
+      </div>
+      <div class="cards" id="cards">
+        <div class="image">
+            <img src="gorsel/4.jpg" alt="">
+        </div>
+          <div class="star">
+            <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+            <span id="rating">5.0</span>
+            <span id="class">Fırın</span>
+          </div>
+        <div class="card-content">
+          <h2>Solakoğlu Fırın</h2>
+          
+        </div>
+        <a href="restoran.html" class="btn">Daha Fazla</a>
+        </button>
+      </div>
+      <div class="cards" id="cards">
+      <div class="image">
+          <img src="gorsel/14.jpg" alt="">
+      </div>
+        <div class="star">
+          <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+          <span id="rating">5.0</span>
+          <span id="class">Fırın</span>
+        </div>
+      <div class="card-content">
+        <h2>Saraçhane Fırını</h2>
+        
+      </div>
+      <a href="restoran.html" class="btn">Daha Fazla</a>
+
+      </button>
+      </div>
+  </section>
+</section>
+<!--------------------------------------------------->
+<article class="article">
+  <h1 id="fast-food">Kebap</h1>
+</article>
+<section>
+  <section>
+      <div class="cards" id="cards">
+        <div class="image">
+            <img src="gorsel/11.jpg" alt="">
+        </div>
+          <div class="star">
+            <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+            <span id="rating">5.0</span>
+            <span id="class">Kebap</span>
+          </div>
+        <div class="card-content">
+          <h2>Salaş Kebap</h2>
+          
+        </div>
+        <a href="restoran.html" class="btn">Daha Fazla</a>
+
+        </button>
+      </div>
+      <div class="cards" id="cards">
+        <div class="image">
+            <img src="gorsel/19.jpg" alt="">
+        </div>
+          <div class="star">
+            <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+            <span id="rating">5.0</span>
+            <span id="class">Kebap</span>
+          </div>
+        <div class="card-content">
+          <h2>Ciğerci Bahattin</h2>
+          
+        </div>
+        <a href="restoran.html" class="btn">Daha Fazla</a>
+        </button>
+      </div>
+      <div class="cards" id="cards">
+      <div class="image">
+          <img src="gorsel/12.jpg" alt="">
+      </div>
+        <div class="star">
+          <span><i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+          <span id="rating">5.0</span>
+          <span id="class">Kebap</span>
+        </div>
+      <div class="card-content">
+        <h2>Meraş Kebap</h2>
+        
+      </div>
+      <a href="restoran.html" class="btn">Daha Fazla</a>
+
+      </button>
+      </div>
+  </section>
+</section>
+<!--------------------------------------------------->
+    <!--Section End-->
+    <!--Footer Start-->
+    <!--Footer End-->
+    <script src="JS/Anasayfa.js"></script>
+  </body>
+</html>
